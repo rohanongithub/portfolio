@@ -72,7 +72,7 @@ export const Map = () => {
   return (
     <div 
       ref={mapContainer} 
-      className="w-full h-64 rounded-lg overflow-hidden"
+      className="w-full h-48 rounded-lg overflow-hidden"
       style={{
         border: '1px solid rgba(255, 255, 255, 0.1)',
         boxShadow: '0 4px 20px rgba(0, 0, 0, 0.3)'
