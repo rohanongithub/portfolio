@@ -106,7 +106,7 @@ export const Skills = () => {
           viewport={{ once: true }}
         >
           <TextReveal
-            text="Currently, all I know about"
+            text="Currently, my toolbox"
             className="text-xl md:text-2xl font-light text-gray-400 tracking-wider"
             delay={0.4}
           />

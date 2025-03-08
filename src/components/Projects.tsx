@@ -99,8 +99,8 @@ export const Projects = () => {
       title: "Portfolio Website",
       description: "A modern, interactive portfolio built entirely using Cursor AI in under 50 prompts. Features smooth page transitions, WebGL aurora effects, and responsive design. Demonstrates the power of AI-assisted development.",
       tech: ["Next.js", "Framer Motion", "TailwindCSS", "WebGL", "Cursor AI"],
-      link: "https://github.com/rohanongithub/Portfolio-ft.cursor",
-      website: "https://rohan.vercel.app"
+      link: "https://github.com/rohanongithub/portfolio",
+      website: "#"
     }
   ];
 
@@ -124,7 +124,7 @@ export const Projects = () => {
         transition={{ duration: 0.8, ease: [0.645, 0.045, 0.355, 1] }}
       >
         <TextReveal
-          text="Projects 🔥"
+          text="Projects🔥"
           className="text-5xl md:text-7xl font-semibold text-gradient mb-6 tracking-tight"
           delay={0.2}
         />

@@ -9,8 +9,8 @@ interface NavbarProps {
 
 export const Navbar = ({ onNavigate }: NavbarProps) => {
   const navLinks = [
-    { name: 'Blog', href: '/blog' },
     { name: 'Projects', href: '#', action: () => onNavigate?.('projects') },
+    { name: 'Blog', href: '/blog' },
     { name: 'Contact', href: '#', action: () => onNavigate?.('contact') },
   ];
 

@@ -1,25 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio Website
 
-## Getting Started
+A modern, interactive portfolio website built with Next.js, featuring smooth page transitions, WebGL aurora effects, and responsive design. Built with Cursor AI assistance in under 50 prompts.
 
-First, run the development server:
+## 📷 Preview
+
+### Projects Section
+![Projects Section](public/images/projects-section.png)
+
+*A showcase of my latest projects with links to GitHub repositories and live demos.*
+
+## 🚀 Features
+
+- **Interactive WebGL Backgrounds**: Beautiful aurora effect with customizable colors
+- **Smooth Animations**: Powered by Framer Motion for seamless transitions
+- **Responsive Design**: Looks great on all devices
+- **Blog Section**: Customizable blog with individual post pages
+- **Interactive Map**: Location display using MapLibre GL
+- **Dark Mode**: Elegant dark-themed UI
+
+## 💻 Tech Stack
+
+- **Framework**: Next.js
+- **Animation**: Framer Motion
+- **Styling**: TailwindCSS
+- **Graphics**: WebGL, OGL
+- **Deployment**: Vercel
+- **Development**: Built with assistance from Cursor AI
+
+## 🛠️ Getting Started
+
+First, install the dependencies:
+
+```bash
+npm install
+# or
+yarn install
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🔗 Links
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- [Live Demo](https://rohan.vercel.app)
+- [GitHub Repository](https://github.com/rohanongithub/Portfolio-ft.cursor)
 
+## 📝 License
+
+This project is open source and available under the MIT License.
 
 ## Deploy on Vercel
 
