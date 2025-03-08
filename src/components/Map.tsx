@@ -1,8 +1,6 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
-
-
 import maplibregl from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
 
@@ -17,25 +15,26 @@ export const Map = () => {
     const bengaluruLng = 77.5946;
     const bengaluruLat = 12.9716;
 
+    // Use a simpler approach with OpenStreetMap base layer
     map.current = new maplibregl.Map({
       container: mapContainer.current,
       style: {
         version: 8,
         sources: {
-          'osm': {
+          'osm-tiles': {
             type: 'raster',
-            tiles: ['https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}@2x.png'],
+            tiles: ['https://a.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png'],
             tileSize: 256,
-            attribution: '&copy; OpenStreetMap Contributors'
+            attribution: '© OpenStreetMap contributors, © CARTO'
           }
         },
         layers: [
           {
-            id: 'osm',
+            id: 'osm-tiles',
             type: 'raster',
-            source: 'osm',
+            source: 'osm-tiles',
             minzoom: 0,
-            maxzoom: 22
+            maxzoom: 19
           }
         ]
       },
