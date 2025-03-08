@@ -9,10 +9,13 @@ import 'maplibre-gl/dist/maplibre-gl.css';
 export const Map = () => {
   const mapContainer = useRef<HTMLDivElement>(null);
   const map = useRef<maplibregl.Map | null>(null);
-  const airplaneMarker = useRef<maplibregl.Marker | null>(null);
 
   useEffect(() => {
     if (!mapContainer.current) return;
+
+    // Bengaluru coordinates
+    const bengaluruLng = 77.5946;
+    const bengaluruLat = 12.9716;
 
     map.current = new maplibregl.Map({
       container: mapContainer.current,
@@ -21,7 +24,7 @@ export const Map = () => {
         sources: {
           'osm': {
             type: 'raster',
-            tiles: ['https://tile.openstreetmap.org/{z}/{x}/{y}.png'],
+            tiles: ['https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}@2x.png'],
             tileSize: 256,
             attribution: '&copy; OpenStreetMap Contributors'
           }
@@ -32,20 +35,34 @@ export const Map = () => {
             type: 'raster',
             source: 'osm',
             minzoom: 0,
-            maxzoom: 19
+            maxzoom: 22
           }
         ]
       },
-      center: [77.5637, 12.9141], // JSSATEB coordinates
-      zoom: 15
+      center: [bengaluruLng, bengaluruLat],
+      zoom: 11
     });
 
     // Add navigation control
-    map.current.addControl(new maplibregl.NavigationControl());
+    map.current.addControl(new maplibregl.NavigationControl({
+      showCompass: false
+    }));
 
-    // Add marker for JSSATEB
-    new maplibregl.Marker({ color: '#FF0000' })
-      .setLngLat([77.5637, 12.9141])
+    // Create custom marker element with pulsing effect
+    const markerElement = document.createElement('div');
+    markerElement.className = 'custom-marker';
+    markerElement.innerHTML = `
+      <div class="marker-dot"></div>
+      <div class="marker-pulse"></div>
+    `;
+
+    // Add marker for Bengaluru
+    new maplibregl.Marker({
+      element: markerElement,
+      color: '#00D8FF',
+      scale: 1.2
+    })
+      .setLngLat([bengaluruLng, bengaluruLat])
       .addTo(map.current);
 
     return () => {
@@ -57,6 +74,10 @@ export const Map = () => {
     <div 
       ref={mapContainer} 
       className="w-full h-64 rounded-lg overflow-hidden"
+      style={{
+        border: '1px solid rgba(255, 255, 255, 0.1)',
+        boxShadow: '0 4px 20px rgba(0, 0, 0, 0.3)'
+      }}
     />
   );
 }; 
