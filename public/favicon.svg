@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <rect width="32" height="32" fill="transparent"/>
+  
+  <!-- Isometric styled R -->
+  <g transform="translate(4, 4)">
+    <!-- Vertical stem -->
+    <path d="M4,2 L4,24 L8,22 L8,4 Z" fill="#00D8FF"/>
+    
+    <!-- Top curve -->
+    <path d="M8,4 L16,2 C20,2 22,5 22,8 C22,11 20,14 16,14 L8,12 Z" fill="#00D8FF"/>
+    
+    <!-- Leg -->
+    <path d="M16,14 L24,22 L19,24 L13,16 L8,15 L8,12 L16,14 Z" fill="#00D8FF"/>
+    
+    <!-- Outlines -->
+    <path d="M4,2 L4,24 L8,22 L8,4 Z M8,4 L16,2 C20,2 22,5 22,8 C22,11 20,14 16,14 L8,12 Z M16,14 L24,22 L19,24 L13,16 L8,15 L8,12 L16,14 Z" 
+          fill="none" 
+          stroke="#ffffff" 
+          stroke-width="0.7"/>
+  </g>
+</svg> 
