@@ -5,7 +5,12 @@ A modern, interactive portfolio website built with Next.js, featuring smooth pag
 ## 📷 Preview
 
 ### Projects Section
-![Projects Section](public/images/projects-section.png)
+![Rohan_dev](https://github.com/user-attachments/assets/81901862-65b3-4fc8-befb-244c00b409e6)
+
+### Blog Section
+![Rohan_dev · 12 10am · 03-09](https://github.com/user-attachments/assets/5934ae4a-e2bf-49b3-b934-a35861d09879)
+
+![Rohan_dev · 12 11am · 03-09](https://github.com/user-attachments/assets/92a0ba3f-7377-41b4-92a3-2f3da30fd735)
 
 *A showcase of my latest projects with links to GitHub repositories and live demos.*
 
