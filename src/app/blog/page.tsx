@@ -7,19 +7,27 @@ import Link from 'next/link';
 
 const blogPosts = [
   {
-    id: 'apple-core-architecture',
-    title: "Understanding Apple's Core Architecture",
-    description: 'Deep dive into performance cores and efficiency cores in Apple Silicon - how they work together to deliver power and efficiency.',
-    date: 'March 8, 2025',
-    readTime: '8 min read'
+    id: 'apple-design-principles',
+    title: `Apple's Design Principles`,
+    description: `Exploring Apple's design principles—simplicity, elegance, and user focus—that shape its iconic products and seamless user experiences.`,
+    date: 'March 13, 2025',
+    readTime: '5 min read'
   },
   {
     id: 'optimizing-web-performance',
     title: 'Back to Basics: Lightning Fast Websites',
     description: 'Why less is more: Achieving blazing fast load times with minimal components and plain HTML.',
     date: 'March 8, 2025',
-    readTime: '6 min read'
+    readTime: '3 min read'
+  },
+  {
+    id: 'apple-core-architecture',
+    title: "Understanding Apple's Core Architecture",
+    description: 'Deep dive into performance cores and efficiency cores in Apple Silicon - how they work together to deliver power and efficiency.',
+    date: 'March 8, 2025',
+    readTime: '5 min read'
   }
+  
 ];
 
 export default function BlogPage() {

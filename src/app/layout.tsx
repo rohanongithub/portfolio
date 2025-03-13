@@ -26,6 +26,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/favicon.png" type="image/png" sizes="50x50" />
+        <meta name="google-site-verification" content="yQr2lvKsrMS9KjyUJkF3_RmEkCGGlKOw-DSfh1FygeI" />
       </head>
       <body className={poppins.className}>{children}</body>
     </html>
