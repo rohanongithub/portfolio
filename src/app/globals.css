@@ -173,3 +173,25 @@ body {
   inset: 0;
   z-index: -10;
 }
+
+/* Media query for "Coming soon" message */
+@media (max-width: 820px) {
+  body > * {
+    display: none !important;
+  }
+  
+  body::before {
+    content: "Cooking up the responsive version 👨‍🍳\A Stay Tuned!";
+    white-space: pre-line;
+    display: flex;
+    background-color: #121212;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(var(--foreground-rgb));
+    font-size: 2rem;
+    font-weight: 100;
+    width: 100vw;
+    height: 100vh;
+  }
+}
