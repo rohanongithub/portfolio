@@ -54,8 +54,8 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## 🔗 Links
 
-- [Live Demo](https://rohan.vercel.app)
-- [GitHub Repository](https://github.com/rohanongithub/Portfolio-ft.cursor)
+- [Live Demo](https://rohandev.vercel.app)
+- [GitHub Repository](https://github.com/rohanongithub/portfolio)
 
 ## 📝 License
 
