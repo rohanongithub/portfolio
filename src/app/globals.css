@@ -183,10 +183,10 @@ body {
   body::before {
     content: "Cooking up the responsive version 👨‍🍳\A Stay Tuned!";
     white-space: pre-line;
-    display: flex;
     background-color: #121212;
     justify-content: center;
     align-items: center;
+    display: flex;
     text-align: center;
     color: rgb(var(--foreground-rgb));
     font-size: 2rem;
