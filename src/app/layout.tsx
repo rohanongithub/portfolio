@@ -9,13 +9,37 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Rohan.dev",
-  description: "A creative portfolio with animated text effects",
+  title: "Rohan.dev | Creative Frontend Developer",
+  description: "Welcome to my portfolio. Dig in :)",
   icons: {
     icon: '/favicon.png',
     apple: '/favicon.png',
-  }
+  },
+  keywords: ["Frontend Developer", "Portfolio", "Web Design", "UI/UX", "React", "Next.js", "Rohan"],
+  authors: [{ name: "Rohan" }],
+  openGraph: {
+    title: "Rohan.dev | Creative Frontend Developer",
+    description: "Welcome to my portfolio. Dig in :)",
+    url: "https://rohandev.vercel.app",
+    siteName: "Rohan.dev",
+    images: [
+      {
+        url: "https://rohandev.vercel.app/og-image.png",
+        width: 800,
+        height: 600,
+        alt: "Rohan Portfolio Preview",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Rohan.dev | Creative Frontend Developer",
+    description: "Welcome to my portfolio. Dig in :)",
+    images: ["https://rohandev.vercel.app/og-image.png"],
+  },
 };
+
 
 export default function RootLayout({
   children,
