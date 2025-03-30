@@ -50,8 +50,14 @@ export default function RootLayout({
       <head>
 <title>{String(metadata.title) || "Rohan.dev | Creative Frontend Developer"}</title>
 <meta name="description" content={String(metadata.description) || "Welcome to my portfolio. Dig in :)"} />
-<meta name="keywords" content={metadata.keywords?.join(", ") || "Frontend Developer, Portfolio, Web Design"} />
-<meta name="author" content={metadata.authors?.map(a => String(a.name)).join(", ") || "Rohan"} />
+<meta 
+  name="keywords" 
+  content={Array.isArray(metadata.keywords) ? metadata.keywords.join(", ") : metadata.keywords || "Frontend Developer, Portfolio, Web Design"} 
+/>
+<meta 
+  name="author" 
+  content={Array.isArray(metadata.authors) ? metadata.authors.map(a => a.name).join(", ") : "Rohan"} 
+/>
 
 
 
