@@ -48,10 +48,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-       <title>{metadata.title || "Rohan.dev | Creative Frontend Developer"}</title>
-<meta name="description" content={metadata.description || "Welcome to my portfolio. Dig in :)"} />
+<title>{String(metadata.title) || "Rohan.dev | Creative Frontend Developer"}</title>
+<meta name="description" content={String(metadata.description) || "Welcome to my portfolio. Dig in :)"} />
 <meta name="keywords" content={metadata.keywords?.join(", ") || "Frontend Developer, Portfolio, Web Design"} />
-<meta name="author" content={metadata.authors?.map(a => a.name).join(", ") || "Rohan"} />
+<meta name="author" content={metadata.authors?.map(a => String(a.name)).join(", ") || "Rohan"} />
+
 
 
         {/* Open Graph (Facebook, LinkedIn, etc.) */}
