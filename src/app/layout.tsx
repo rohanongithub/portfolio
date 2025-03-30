@@ -62,18 +62,20 @@ export default function RootLayout({
 
 
         {/* Open Graph (Facebook, LinkedIn, etc.) */}
-        <meta property="og:title" content={metadata.openGraph?.title} />
-        <meta property="og:description" content={metadata.openGraph?.description} />
-        <meta property="og:image" content={metadata.openGraph?.images?.[0]?.url} />
-        <meta property="og:url" content={metadata.openGraph?.url} />
-        <meta property="og:type" content={metadata.openGraph?.type} />
-        <meta property="og:site_name" content={metadata.openGraph?.siteName} />
+        <meta property="og:title" content={metadata.openGraph?.title ? String(metadata.openGraph.title) : undefined} />
+
+        <meta property="og:description" content={metadata.openGraph?.description ? String(metadata.openGraph.description) : undefined} />
+<meta property="og:image" content={metadata.openGraph?.images?.[0]?.url ? String(metadata.openGraph.images[0].url) : undefined} />
+<meta property="og:url" content={metadata.openGraph?.url ? String(metadata.openGraph.url) : undefined} />
+<meta property="og:site_name" content={metadata.openGraph?.siteName ? String(metadata.openGraph.siteName) : undefined} />
+
 
         {/* Twitter Card */}
-        <meta name="twitter:card" content={metadata.twitter?.card} />
-        <meta name="twitter:title" content={metadata.twitter?.title} />
-        <meta name="twitter:description" content={metadata.twitter?.description} />
-        <meta name="twitter:image" content={metadata.twitter?.images?.[0]} />
+       <meta name="twitter:card" content={metadata.twitter?.card ? String(metadata.twitter.card) : undefined} />
+<meta name="twitter:title" content={metadata.twitter?.title ? String(metadata.twitter.title) : undefined} />
+<meta name="twitter:description" content={metadata.twitter?.description ? String(metadata.twitter.description) : undefined} />
+<meta name="twitter:image" content={metadata.twitter?.images?.[0] ? String(metadata.twitter.images[0]) : undefined} />
+
 
         {/* Favicon */}
         <link rel="icon" href="/favicon.png" type="image/png" sizes="50x50" />
