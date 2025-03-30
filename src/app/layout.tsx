@@ -9,7 +9,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Rohan.dev | Creative Frontend Developer",
+  title: "Rohan.dev",
   description: "Welcome to my portfolio. Dig in :)",
   icons: {
     icon: '/favicon.png',
@@ -48,7 +48,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-<title>{String(metadata.title) || "Rohan.dev | Creative Frontend Developer"}</title>
+<title>{String(metadata.title) || "Rohan.dev"}</title>
 <meta name="description" content={String(metadata.description) || "Welcome to my portfolio. Dig in :)"} />
 <meta 
   name="keywords" 
