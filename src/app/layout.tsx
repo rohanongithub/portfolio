@@ -69,14 +69,15 @@ export default function RootLayout({
   property="og:image" 
   content={
     Array.isArray(metadata.openGraph?.images) 
-      ? metadata.openGraph?.images[0]?.url 
-        ? String(metadata.openGraph.images[0].url) 
+      ? metadata.openGraph.images[0] 
+        ? String(metadata.openGraph.images[0]) 
         : undefined 
-      : metadata.openGraph?.images?.url 
-        ? String(metadata.openGraph.images.url) 
+      : metadata.openGraph?.images 
+        ? String(metadata.openGraph.images) 
         : undefined
   } 
 />
+
 <meta property="og:url" content={metadata.openGraph?.url ? String(metadata.openGraph.url) : undefined} />
 <meta property="og:site_name" content={metadata.openGraph?.siteName ? String(metadata.openGraph.siteName) : undefined} />
 
