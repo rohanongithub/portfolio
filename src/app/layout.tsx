@@ -87,6 +87,8 @@ export default function RootLayout({
 
         {/* Favicon */}
         <link rel="icon" href="/favicon.png" type="image/png" sizes="50x50" />
+        <link rel="apple-touch-icon" href="/favicon.png" />
+        <link rel="manifest" href="/manifest.json" />
 
         {/* Google Site Verification (If needed) */}
         <meta name="google-site-verification" content="yQr2lvKsrMS9KjyUJkF3_RmEkCGGlKOw-DSfh1FygeI" />
