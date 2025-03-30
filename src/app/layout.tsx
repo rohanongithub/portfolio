@@ -82,11 +82,7 @@ export default function RootLayout({
 <meta property="og:site_name" content={metadata.openGraph?.siteName ? String(metadata.openGraph.siteName) : undefined} />
 
 
-        {/* Twitter Card */}
-       <meta name="twitter:card" content={metadata.twitter?.card ? String(metadata.twitter.card) : undefined} />
-<meta name="twitter:title" content={metadata.twitter?.title ? String(metadata.twitter.title) : undefined} />
-<meta name="twitter:description" content={metadata.twitter?.description ? String(metadata.twitter.description) : undefined} />
-<meta name="twitter:image" content={metadata.twitter?.images?.[0] ? String(metadata.twitter.images[0]) : undefined} />
+      
 
 
         {/* Favicon */}
