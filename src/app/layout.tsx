@@ -40,7 +40,6 @@ export const metadata: Metadata = {
   },
 };
 
-
 export default function RootLayout({
   children,
 }: {
@@ -49,7 +48,29 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} />
+        <meta name="keywords" content={metadata.keywords?.join(", ")} />
+        <meta name="author" content={metadata.authors?.map(a => a.name).join(", ")} />
+
+        {/* Open Graph (Facebook, LinkedIn, etc.) */}
+        <meta property="og:title" content={metadata.openGraph?.title} />
+        <meta property="og:description" content={metadata.openGraph?.description} />
+        <meta property="og:image" content={metadata.openGraph?.images?.[0]?.url} />
+        <meta property="og:url" content={metadata.openGraph?.url} />
+        <meta property="og:type" content={metadata.openGraph?.type} />
+        <meta property="og:site_name" content={metadata.openGraph?.siteName} />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content={metadata.twitter?.card} />
+        <meta name="twitter:title" content={metadata.twitter?.title} />
+        <meta name="twitter:description" content={metadata.twitter?.description} />
+        <meta name="twitter:image" content={metadata.twitter?.images?.[0]} />
+
+        {/* Favicon */}
         <link rel="icon" href="/favicon.png" type="image/png" sizes="50x50" />
+
+        {/* Google Site Verification (If needed) */}
         <meta name="google-site-verification" content="yQr2lvKsrMS9KjyUJkF3_RmEkCGGlKOw-DSfh1FygeI" />
       </head>
       <body className={poppins.className}>{children}</body>
