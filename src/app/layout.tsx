@@ -67,8 +67,8 @@ export default function RootLayout({
         <meta property="og:description" content={metadata.openGraph?.description ? String(metadata.openGraph.description) : undefined} />
         <meta property="og:image" content="https://rohandev.vercel.app/og-image.png" />
 <meta property="og:image:type" content="image/png" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
+<meta property="og:image:width" content="520" />
+<meta property="og:image:height" content="272" />
 
 
 
