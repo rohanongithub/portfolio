@@ -6,7 +6,14 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 
 const blogPosts = [
-  {
+   {
+    id: 'typography',
+    title: `Importance of Typography principles`,
+    description: `Typography shapes the distinct user experience in Apple and Windows by reflecting their design philosophies and visual clarity.`,
+    date: 'May 10, 2025',
+    readTime: '6 min read'
+  }
+,{
     id: 'apple-design-principles',
     title: `Apple's Design Principles`,
     description: `Exploring Apple's design principles—simplicity, elegance, and user focus—that shape its iconic products and seamless user experiences.`,
