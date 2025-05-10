@@ -6,6 +6,34 @@ import { motion } from "framer-motion";
 import { useParams } from "next/navigation";
 
 const blogContent = {
+  "typography"{
+    title: `Importance of Typography`,
+    date: "May 10, 2025",
+    readTime: "2 min read",
+      content: 
+  `<img src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHdpbmRvd3N8ZW58MHwwfDB8fHww"  
+     alt="Apple vs Windows Typography"  
+     class="w-full h-82 rounded-xl" />
+
+<h2>Typography: The Silent Communicator</h2>
+<p>Typography is more than just selecting fonts; it's about conveying brand identity, enhancing readability, and guiding user interaction. Both Apple and Windows have distinct typographic philosophies that reflect their design ethos.</p>
+
+<h3>Apple's Approach</h3>
+<p>Apple's design emphasizes simplicity and elegance. The San Francisco typeface, introduced in 2015, is tailored for clarity and legibility across devices. Its dynamic nature adjusts spacing and weight to optimize readability on various screen sizes, embodying Apple's commitment to user-centric design.</p>
+
+<h3>Windows' Strategy</h3>
+<p>Windows prioritizes consistency and functionality. The Segoe UI font family serves as the cornerstone of its Fluent Design System, ensuring uniformity across applications. This approach facilitates a cohesive user experience, especially in enterprise environments where clarity and efficiency are paramount.</p>
+
+<h2>Comparative Insights</h2>
+<ul>
+  <li><strong>Design Philosophy:</strong> Apple leans towards aesthetic minimalism, while Windows focuses on practical consistency.</li>
+  <li><strong>Font Dynamics:</strong> San Francisco offers adaptive features for diverse devices; Segoe UI maintains uniformity across platforms.</li>
+  <li><strong>User Experience:</strong> Apple's typography enhances visual appeal; Windows' typography ensures functional clarity.</li>
+</ul>
+
+<p>Understanding these typographic principles provides insight into how design choices impact user interaction and brand perception.</p>
+  `,
+  },
   "apple-design-principles": {
     title: `Apple's Design Principles`,
     date: "March 13, 2025",
