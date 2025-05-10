@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { useParams } from "next/navigation";
 
 const blogContent = {
-  "typography"{
+  "typography":{
     title: `Importance of Typography`,
     date: "May 10, 2025",
     readTime: "2 min read",
